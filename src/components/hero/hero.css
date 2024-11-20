@@ -1,0 +1,106 @@
+/**
+ * Copyright 2024 dawed
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.imageprof{
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;  /* Forme circulaire */
+    object-fit: cover; 
+}
+.hero{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+.hero h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.hero p{
+    width:50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect{
+    padding: 25px 25px;
+    border-radius: 50px;
+    background: linear-gradient(260deg, #DF8908 -5.09%, #B415FF 100%);
+    cursor: pointer;
+}
+.hero-resumer{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(260deg,  #B415FF -5.09%, red 100%);
+    cursor: pointer;
+}
+.hero-connect:hover{
+    border: 2px solid white;
+}
+.hero-resumer:hover{
+    border: 2px solid white;
+}
+@media(max-width:768px){
+    .hero img {
+        margin-top: 40px ;
+        width: 210px;
+
+    }
+    .hero h1 {
+        margin-top: 50px;
+        width: 160px;
+        font-size: 50px;
+        
+    }
+    .hero p {
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .hero-resumer{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+}
