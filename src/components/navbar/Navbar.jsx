@@ -97,7 +97,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <h1>
-        <Link to="/homme" className="logcomment o">
+        <Link to="/" className="logcomment o">
           <img src={logo} width={80} height={80} alt="amine daoud" />
         </Link>
       </h1>
@@ -105,7 +105,7 @@ const Navbar = () => {
       <ul ref={menuRef} className='nav-menu'>
         <img src={menu_close} onClick={closeMenu} alt='' className='nav-mob-close' />
         <li>
-          <Link to="/homme" className='anchor-link'>
+          <Link to="/" className='anchor-link'>
             <p onClick={() => setMenu("homme")}>Accueil</p>
           </Link>
           {menu === "homme" ? <img src={underline} alt='' /> : <></>}
